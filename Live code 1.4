@@ -1,8 +1,11 @@
-<DOCTYPE! html,html5,css,javascript>
+<DOCTYPE! html,css,javascript
 <html lang="en-US">
-<title>Stage | TestSite</title>
+<title>MG Breakers | Getugoing</title>
+<link rel="shortcut icon" type="image/png" href="IMAGES/favicon.png"/>
+<link rel="shortcut icon" type="image/png" href="http://example.com/favicon.png"/>
 <head>
-<link rel="stylesheet" type="text/css" href="./stylestage.css">
+<link rel="stylesheet" type="text/css" href="./style.css">
+<link rel="javascript" type="text/js"  href="./javascript.js">
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="copyright" content="Luke Hardman">
@@ -10,8 +13,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="description" content="Getugoing">
 
-<body>
+
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<![endif]-->
 <style>
 * {
     box-sizing: border-box;
@@ -22,110 +30,89 @@
     width: 33.33%;
     padding: 3px;
 }
+
 /* Clearfix (clear floats) */
 .row::after {
     content: "";
     clear: both;
     display: table;
 }
+body {font-family: Arial, Helvetica, sans-serif;}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 4px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
 </style>
+
+
+<body>
+
   <body style="background-color:#000000">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script>
-    $('body').append('<div style="" id="loadingDiv"><div class="loader">Loading...</div></div>');
-    $(window).on('load', function(){
-      setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
-    });
-    function removeLoader(){
-        $( "#loadingDiv" ).fadeOut(100, function() {
-          // fadeOut complete. Remove the loading div
-          $( "#loadingDiv" ).remove(); //makes page more lightweight
-      });
-    }
-  </script>
 
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a style="color:#000000">Contact us on:</a>
-      <a href="https://www.facebook.com/ian.rice.9085?fb_dtsg_ag=AdxkJJ3X08XIW5qq6Eo6e8OcD9k81-y3f7fbtJiiIG8kIg%3AAdwabORGS1VVeZL5x7IRSBy8k_jhUx9OuJfnnR735wzLnw">Facebook</a>
-      <a href="https://www.instagram.com/">Instagram</a>
-      <a href="mailto:getugoing@outlook.com?subject=FreeQuotation">Email</a>
-      <a href="#">Phone: 07963522111 </a>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <a href="#">Our Opening hours</a>
-      <a href="#">Monday - 9:00am - 5:00pm </a>
-      <a href="#">Tuesday - 9:00am - 5:00pm</a>
-      <a href="#">Wednesday - 9:00am - 5:00pm</a>
-      <a href="#">Thursday - 9:00am - 5:00pm</a>
-      <a href="#">Friday - 9:00am - 5:00pm</a>
-      <a href="#">Saturday - 9:00am - 1:00pm</a>
-      <a href="#">Sunday - Closed</a>
-    </div>
-
-    <span style="color:#00ff00;font-size:25px;cursor:pointer" onclick="openNav()">&#9776;</span>
-
-
-    <script>
-    function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-    }
-
-    function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-    }
-    </script>
-
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top!</button>
-    <script>
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
-
-    function scrollFunction() {
-        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-            document.getElementById("myBtn").style.display = "block";
-        } else {
-            document.getElementById("myBtn").style.display = "none";
-        }
-    }
-
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
-    </script>
-<br>
-
+ <a href="file:///D:/Websites/Getugoing/index%20.html">
           <img src="IMAGES/rovernowhiteback.png" alt="Get 'u' Going" align="left" style="width:300px;height:350px;">
+ </a>
+
 
 <h1>
+  <a href="file:///D:/Websites/Getugoing/index%20.html">
    <img src="IMAGES/newmg1.jpg" alt="Get 'u' Going"  align="right" style="width:250px;height:325px;">
+ </a>
 
 
        <div style="text-align: center;">
-<form method="get" action="http://www.google.com/search"> <input type="text" name="q" size="30" style="width:700px;height:50PX"; maxlength="50" value="" /> <input type="submit" value="Search" /> </form>
+<form method="get" action="http://www.google.com/search"> <input type="text" name="q" size="30" style="width:600PX;height:50PX"; maxlength="50" value="" /> <input type="submit" value="Search" /> </form>
 
 <br>
 
+    <a href="file:///D:/Websites/Getugoing/index%20.html">
              <img src="IMAGES/mgroverbreakersbolton.gif" alt="Get 'u' Going" align="center" style="width:1250px;height:325px;">
+    </a>
 
-             <img src="IMAGES/contactgifnumber.gif" alt="Get 'u' Going" align="center" style="width:500px;height:50px;">
 
-<br>
+         <img src="IMAGES/contactgifnumber.gif" alt="Get 'u' Going" align="center" style="width:500px;height:50px;">
+
+</a>
+
+                                                            <br>
 </h1>
 </div>
 
 <div style="text-align: center;">
 <h2 style="color:Green;"> We break and repair any MG rover, Any age, Any model, Just give us a call and we will give you a price. </h2>
 
+
 <br>
 <br>
 <br>
+
 
         <a href="https://www.facebook.com/ian.rice.9085?fb_dtsg_ag=AdxkJJ3X08XIW5qq6Eo6e8OcD9k81-y3f7fbtJiiIG8kIg%3AAdwabORGS1VVeZL5x7IRSBy8k_jhUx9OuJfnnR735wzLnw">
         <img src="IMAGES/Facebook.jpg" alt="Get 'u' Going" align="center" style="width:150px;height:150px;"></a>
@@ -136,20 +123,22 @@
          <a href="https://www.instagram.com/">
          <img src="IMAGES/insta.jpg" alt="Get 'u' Going" align="center" style="width:150px;height:150px;"></a>
 
+
 <br>
 <br>
 <br>
 
+
 <!-- This is the picture of the top 3 cars that sit there -->
 <div class="row">
   <div class="column">
-    <img src="IMAGES/image1.jpeg" alt="Get 'u' Going" style="width:100%" align="left" download="IMAGES/image1.jpeg">
+    <img src="IMAGES/image1.jpeg" alt="Get 'u' Going" style="width:100%" download="IMAGES/image1.jpeg">
 </div>
   <div class="column">
-    <img src="IMAGES/image3.jpeg" alt="Get 'u' Going" style="width:100%"  align="right" download="IMAGES/image3.jpeg">
+    <img src="IMAGES/image3.jpeg" alt="Get 'u' Going" style="width:100%"  download="IMAGES/image3.jpeg">
   </div>
   <div class="column">
-    <img src="IMAGES/image2.jpeg" alt="Get 'u' Going" style="width:100%"  align="center" download="IMAGES/image2.jpeg">
+    <img src="IMAGES/image2.jpeg" alt="Get 'u' Going" style="width:100%"  download="IMAGES/image2.jpeg">
   </div>
 </div>
 <br>
@@ -220,7 +209,6 @@
                         We pay on collection for any make, any model and will make the process of scrapping your car as safe, quick and easy as posible.<br>
                         For an up to date quote for your end of life vehicle please get in touch. </h1>
 
-
                             <div class="Email">
                               <a href="mailto:getugoing@outlook.com?subject=FreeQuotation">
                               <img src="IMAGES/email9.png" style="height: 150px; width: 150px" /><span>
@@ -229,68 +217,11 @@
 
   <h1>
       <div>
-      <img src="IMAGES/joinlogo.jpg" alt="Get 'u' Going"  align="center" style="width:600px;height:400px;">
-      </a>
+              <a href="file:///D:/Websites/Getugoing/index%20.html">
+              <img src="IMAGES/mglogo2018.jpg" alt="Get 'u' Going"  align="center" style="width:500px;height:300px;">
+              </a>
       </div>
 </h1>
-
-<br>
-<br>
-<br>
-
-<h1 style="color:white;">Contact Us</h1>
-
-<head>
-
-
-
-    <label class="viewOpen" for="modal-state">Click me to view our opening times!&nbsp;&nbsp;<i class="fa fa-clock-o"></i></label>
-    <input type="checkbox" name="modal-state" id="modal-state">
-    <div class="modal-overlay">
-      <label for="modal-state" class="modal-overlay-close"></label>
-      <div class="modal">
-        <label class="button-close" for="modal-state"><i class="fa fa-times"></i></label>
-        <h2>Our opening times!</h2>
-        <div id="Monday" class="dateTime">
-          <div class="day">Monday</div>
-          <div class="time">9:00am-5:00pm</div>
-        </div>
-        <br>
-        <div id="Tuesday" class="dateTime">
-          <div class="day">Tuesday</div>
-          <div class="time">9:00am-5:00pm</div>
-          <br>
-
-        <div id="Wednesday" class="dateTime">
-          <div class="day">Wednesday</div>
-          <div class="time">9:00am-5:00pm</div>
-        </div>
-        <br>
-        <div id="Thursday" class="dateTime">
-          <div class="day">Thursday</div>
-          <div class="time">9:00am-5:00pm</div>
-        </div>
-        <br>
-        <div id="Friday" class="dateTime">
-          <div class="day">Friday</div>
-          <div class="time">9:00am-5:00pm</div>
-        </div>
-        <br>
-        <div id="Saturday" class="dateTime">
-          <div class="day">Saturday</div>
-          <div class="time">9:00am-1:00pm</div>
-        </div>
-        <br>
-        <div id="Sunday" class="dateTime">
-          <div class="day">Sunday</div>
-          <div class="time">Closed</div>
-        </div>
-        <br>
-        </div>
-      </div>
-    </div>
-  </div>
-
 
 
                 <!-- main_menu -->
@@ -300,6 +231,7 @@
 
                 <!-- InstanceBeginEditable name="MainRegion" -->
                 <div class="content33_box">
+                <h1 style="color:white;">Contact Us</h1>
                 <h2 style="color:green;">For all enquiries please contact us by phone, email or using our enquiry form.
                 <div class="content_block">
                 <div class="content22_box"><span class="hilighted" style="color:green;">Telephone:07426326643<br>
@@ -319,6 +251,42 @@
                                                                 <img src="IMAGES/rovernowhiteback.png" alt="Get 'u' Going"  align="right" style="width:250px;height:325px;">
                                                               </a>
 
+<!--This is where the maps will sit on the website and grab your location -->
+                      <!-- This is the current location you are at on maps.  -->
+                      <head>
+                      <style type="text/css" align="center">
+                      #map {
+                    	border:3px solid #666;
+                    	-moz-border-radius: 4px;
+                      border-radius: 4px;
+                            }
+
+                      #map	.unselected .gs-result .gs-title, .gs-result .gs-title * {
+                      color: #666666;
+                      font-weight: bold;
+                      text-decoration: underline;
+                            }
+
+                      #searchwell.unselected .gs-result .gs-title, .gs-result .gs-title * {
+                      color: #ffffff;
+                      font-weight: bold;
+                      text-decoration: underline;
+                            }
+
+                     select {
+                  	background-color:#000;
+                  	border:3px solid #666;
+                    padding:5px 0;
+                  	-moz-border-radius: 4px;
+                  	border-radius: 4px;
+                  	font-size:14px;
+                  	color:#FFF;
+                  	font-weight:bold;
+                  	width:600px;
+                    align:center;
+                              }
+                              </style>
+                              </head>
 
 
 <!--Iframe for the two maps that are currently showing certain pin point on google maps -->
@@ -330,26 +298,31 @@
 <!-- This sits under the maps and this is the title for the contact page -->
 
           <h1 style="color:white;">Get in touch with one of our helpful team! <br></h1>
-          <h1 style="color:white;">Leave your query and a little information for us to contact you and we guarentee a free quotation within 24 hours</h1>
-
-          <h2>Newsletter Subscription button</h2>
-      <a href="file:///D:/Websites/Getugoing/Newsletter_subscribe_stage.html" class="block">Subscribe to our newletter here </a>
+          <h1 style="color:white;">  Leave your query and a little information for us to contact you and we guarentee a free quotation within 24 hours</h1>
 
 
           <!-- This Script is from wwwcom for free email send, This should take up to two minutes to deliver to inbox of email below -->
 
           <div>
-            <a href="https://www.facebook.com/ian.rice.9085?fb_dtsg_ag=AdxkJJ3X08XIW5qq6Eo6e8OcD9k81-y3f7fbtJiiIG8kIg%3AAdwabORGS1VVeZL5x7IRSBy8k_jhUx9OuJfnnR735wzLnw">
-            <img src="IMAGES/Facebook.jpg" alt="Get 'u' Going" align="center" style="width:150px;height:150px;"></a>
-
-             <a href="mailto:getugoing@outlook.com?subject=FreeQuotation  ">
-             <img src="IMAGES/email9.png" alt="Get 'u' Going" align="center" style="width:200px;height:200px;"></a>
-
-             <a href="https://www.instagram.com/">
-             <img src="IMAGES/insta.jpg" alt="Get 'u' Going" align="center" style="width:150px;height:150px;"></a>
+          <a href='#top'>
+                   <img src="IMAGES/backtotop.png" alt="Get 'u' Going" align="center" style="width:50px;height:50px;">
+          </a>
+          <script type='text/javascript' src='http://m.free-codes.org/gh.php?id=2001'></script>
+          <A HREF="mailto:getugoing@outlook.com?subject=FreeQuotation"><INPUT type="image" name="search" src="IMAGES/email9.png" border="0" style="width:150px;height:150px;">
+          </A>
+          <a href='#top'>
+                   <img src="IMAGES/backtotop.png" alt="Get 'u' Going" align="center" style="width:50px;height:50px;">
           </a>
         </div>
           <br>
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click to view Date and time</button>
+
+
+<p style="color:green;" id="demo"></p>
+
+
 
 
 </body>
