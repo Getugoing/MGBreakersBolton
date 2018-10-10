@@ -1,0 +1,109 @@
+<DOCTYPE! html>
+<html>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+form {
+    border: 3px solid #f1f1f1;
+    font-family: Arial;
+}
+
+.container {
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=checkbox] {
+    margin-top: 16px;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+</style>
+<body>
+
+<body style="background-color:#000000">
+
+  <button onclick="goBack()">Go Back</button>
+
+  <p>Notice that clicking on the Back button here will not result in any action, because there is no previous URL in the history list.</p>
+
+  <script>
+  function goBack() {
+      window.history.back();
+  }
+  </script>
+
+
+
+  <div>
+    <a href="file:///D:/Websites/Getugoing/stage%201.6.html">
+    <img src="IMAGES/newmg1.jpg" alt="Get 'u' Going"  align="right" style="width:150px;height:150px;"></a>
+
+     <a href="file:///D:/Websites/Getugoing/stage%201.6.html">
+     <img src="IMAGES/rovernowhiteback.png" alt="Get 'u' Going" align="left" style="width:150px;height:150px;"></a>
+  </a>
+  </div>
+
+<h1 align="center" style="color:Green;" >MG Breakers Bolton Weekly Newsletter</h1>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+  <div class="container">
+    <h2 align="center">Subscribe to our Newsletter</h2>
+    <p align="center">Please click here to subscribe to our monthly newletter where we update you on the jobs we have done in the last week and any news parts/cars that are now up for sale for you to grab. Lots of offers and deals will be sent your way. </p>
+  </div>
+
+  <div class="container" style="background-color:White">
+    <input type="text" placeholder="Name" name="name" required>
+    <input type="text" placeholder="Email address" name="mail" required>
+    <input type="text" placeholder="Vehicle" name="mail" required>
+    <input type="text" placeholder="Contact number" name="mail" required>
+  </div>
+
+  <div class="container">
+    <a href="mailto:getugoing@outlook.com?subject=FreeQuotation" align="center"><input type="submit" value="Subscribe" <div class="Email"><span>
+      </span></a>
+  </div>
+</form>
+
+<h1 align="center" style="color:Green;" > If you have any questions or queries please just ask </h1>
+
+<div align="center">
+  <a href="https://www.facebook.com/ian.rice.9085?fb_dtsg_ag=AdxkJJ3X08XIW5qq6Eo6e8OcD9k81-y3f7fbtJiiIG8kIg%3AAdwabORGS1VVeZL5x7IRSBy8k_jhUx9OuJfnnR735wzLnw">
+  <img src="IMAGES/Facebook.jpg" alt="Get 'u' Going" align="center" style="width:150px;height:150px;"></a>
+
+   <a href="mailto:getugoing@outlook.com?subject=FreeQuotation  ">
+   <img src="IMAGES/email9.png" alt="Get 'u' Going" align="center" style="width:200px;height:200px;"></a>
+
+   <a href="https://www.instagram.com/">
+   <img src="IMAGES/insta.jpg" alt="Get 'u' Going" align="center" style="width:150px;height:150px;"></a>
+</a>
+</div>
+<br>
+
+</body>
+</html>
